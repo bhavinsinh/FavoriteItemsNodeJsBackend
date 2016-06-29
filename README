@@ -1,0 +1,16 @@
+Backend for "featured" items in node.js using express.js, moongose, mongo DB, redis for sessions, and passport with JWT token for authentication. 
+API's :
+/ - index
+/signup - POST - User Login with email/password.
+/login  - POST -Authenticates an existing user and provides a token to be used for that session.
+
+/user/profile - GET- gets currently logged in users' profile.
+/featured - GET - gets currently active apps/files/accounts.
+
+Admin only API"s:
+
+/featured - POST - Creates a new featured item. Authorisation done based on user's role.
+/featured - PUT - Updated an existing featured item. Authorisation needed.
+/users - GET - Gets all the users in the Database to be shown to the admin to select a user.
+/users - POST - Creates a new user in the system.
+/users - PUT - Updates an existing user.
